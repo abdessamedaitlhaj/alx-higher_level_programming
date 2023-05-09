@@ -4,6 +4,8 @@
  * insert_node - add node in a sorted linked list
  * @head: the linked list.
  * @number: the data to be added.
+ *
+ * Return: the new modified linked list.
  */
 listint_t *insert_node(listint_t **head, int number)
 {
@@ -20,11 +22,11 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		new->next = cur;
 		*head = new;
-		return *head;
+		return (*head);
 	}
 	else
 	{
-		while(cur != NULL)
+		while (cur != NULL)
 		{
 			if (new->n <= cur->n)
 			{
@@ -40,5 +42,5 @@ listint_t *insert_node(listint_t **head, int number)
 			cur = cur->next;
 		}
 	}
-	return *head;
+	return (*head);
 }
