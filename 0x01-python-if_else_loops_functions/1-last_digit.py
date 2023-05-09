@@ -6,7 +6,7 @@ if number < 0:
     number_copy = -number
     last = -(number_copy % 10)
 else:
-    last = (number_copy % 10);
+    last = (number_copy % 10)
 if last == 0:
     print(f"Last digit of {number} is {last} and is 0")
 elif last < 6:
