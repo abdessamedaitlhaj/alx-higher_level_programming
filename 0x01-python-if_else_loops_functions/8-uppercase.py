@@ -2,9 +2,6 @@
 STR = ""
 def uppercase(str):
     for c in str:
-        if ord(c) <= 122 and ord(c) >= 97:
-            STR += chr(ord(c))
-        else:
-            STR += c
-uppercase("gfgGhjV")
-print(STR)
+        check = ord(c) <= 122 and ord(c) >= 97
+        print("{}".format(chr(ord(c) - 32)) if check else "{}".format(c), end="")
+    print()
