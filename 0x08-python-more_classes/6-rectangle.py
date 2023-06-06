@@ -36,7 +36,7 @@ class Rectangle:
 
     def __str__(self):
         if not self.__width and not self.__height:
-            return ("#" * self.__width + "\n" ) * (self.__height - 1) + \
+            return ("#" * self.__width + "\n") * (self.__height - 1) + \
                     "#" * self.__width
         else:
             return ""
