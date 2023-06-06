@@ -15,7 +15,7 @@ class Rectangle:
         """ Property to retrieve width """
         return self.__width
 
-    @height.setter
+    @width.setter
     def width(self, value):
         """ Property to set width """
         if not isinstance(value, int):
