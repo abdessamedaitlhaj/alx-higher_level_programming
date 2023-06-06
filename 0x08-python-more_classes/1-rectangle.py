@@ -8,8 +8,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """ Instantiation with optional width and height
             Args:
-                width(int): the width of the rectangle.
-                height(int): the height of the rectangle.
+                width (int): the width of the rectangle.
+                height (int): the height of the rectangle.
         """
         self.__width = width
         self.__height = height
@@ -23,7 +23,7 @@ class Rectangle:
     def width(self, value):
         """ Property to set width
             Args:
-                value(int): width's value to set.
+                value (int): width's value to set.
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -40,7 +40,7 @@ class Rectangle:
     def height(self, value):
         """ Property to set height
             Args:
-            value(int): height's vale to set.
+            value (int): height's vale to set.
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
