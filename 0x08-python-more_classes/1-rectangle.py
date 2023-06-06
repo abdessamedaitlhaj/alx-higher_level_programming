@@ -10,10 +10,12 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
+    @property
     def width(self):
         """ Property to retrieve width """
         return self.__width
 
+    @width.setter
     def width(self, value):
         """ Property to set width """
         if not isinstance(value, int):
@@ -22,10 +24,12 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
+    @property
     def height(self):
         """ Property to retrieve height """
         return self.__height
 
+    @height.setter
     def height(self, value):
         """ Property to set height """
         if not isinstance(value, int):
@@ -33,6 +37,3 @@ class Rectangle:
         if not value:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    width = property(width, width)
-    height = property(height, height)
