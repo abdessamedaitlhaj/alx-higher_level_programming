@@ -12,21 +12,24 @@ class Rectangle:
         """
         Initializes a rectangle with the specified width and height.
         """
+
         self.width = width
         self.height = height
 
     @property
     def width(self):
         """
-        Getter method to retrieve the width of the rectangle.
+        Retrieves the width of the rectangle.
         """
+
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        Setter method to set the width of the rectangle.
+        Sets the width of the rectangle.
         """
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -36,15 +39,17 @@ class Rectangle:
     @property
     def height(self):
         """
-        Getter method to retrieve the height of the rectangle.
+        Retrieves the height of the rectangle.
         """
+
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        Setter method to set the height of the rectangle.
+        Sets the height of the rectangle.
         """
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -53,12 +58,14 @@ class Rectangle:
 
     def area(self):
         """
-        Return the area of the rectangle.
+        Calculates and returns the area of the rectangle.
         """
+
         return self.__width * self.__height
 
     def perimeter(self):
         """
-        Return the perimeter of the rectangle.
+        Calculates and returns the perimeter of the rectangle.
         """
+
         return (self.__width + self.__height) * 2
