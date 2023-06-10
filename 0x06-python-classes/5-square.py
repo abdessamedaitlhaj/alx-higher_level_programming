@@ -57,5 +57,5 @@ class Square:
 
     def my_print(self):
         """print square as # to stdout"""
-        print(("#" * self.__size + "\n") * (self.__size - 1) + \
-                "#" * self.__size)
+        print(("#" * self.__size + "\n") * (self.__size - 1))
+        print("#" * self.__size)
