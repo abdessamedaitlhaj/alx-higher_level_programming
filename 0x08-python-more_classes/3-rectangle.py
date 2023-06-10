@@ -85,13 +85,13 @@ class Rectangle:
             return 0
         return (self.__width + self.__height) * 2
 
-    def __str__(slef):
+    def __str__(self):
         """Overwrite str to print rectangle as #
 
             Return:
                 string of #
         """
-        if not self.__width and not self.__height:
+        if self.__width and self.__height:
             return ("#" * self.__width + "\n") * (self.__height - 1) + \
                 "#" * self.__width
         else:
