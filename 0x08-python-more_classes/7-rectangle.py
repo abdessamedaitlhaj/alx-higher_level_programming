@@ -99,8 +99,9 @@ class Rectangle:
                 string of #
         """
         if self.__width and self.__height:
-            return (str(self.print_symbol) * self.__width + "\n") * (self.__height - 1) + \
-                str(self.print_symbol) * self.__width
+            return (str(self.print_symbol) * self.__width + "\n") * \
+                    (self.__height - 1) + \
+                    str(self.print_symbol) * self.__width
         else:
             return ""
 
