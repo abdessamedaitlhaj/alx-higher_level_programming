@@ -3,7 +3,10 @@
 
 
 class Rectangle:
-    """class that represents a rectangle with attributes width and height"""
+    """
+    class that represents a rectangle with attributes width, height and
+    number_of_instances
+    """
 
     number_of_instances = 0
     def __init__(self, width=0, height=0):
@@ -11,11 +14,11 @@ class Rectangle:
 
         Args:
             width (int): the width of the rectangle
-            height (int): the height of the rectangle.
+            height (int): the height of the rectangle
         """
         self.width = width
         self.height = height
-        number_of_instances += 1
+        self.number_of_instances += 1
 
     @property
     def width(self):
@@ -113,5 +116,5 @@ class Rectangle:
             Return:
                 string when object is deleted
         """
-        number_of_instances -= 1
+        self.number_of_instances -= 1
         print("Bye rectangle...")
