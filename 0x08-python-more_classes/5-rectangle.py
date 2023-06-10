@@ -111,4 +111,4 @@ class Rectangle:
             Return:
                 string when object is deleted
         """
-        print ("Bye rectangle...")
+        print("Bye rectangle...")
