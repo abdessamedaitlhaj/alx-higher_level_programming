@@ -81,4 +81,6 @@ class Rectangle:
             Return:
                 the perimiter of the rectangle
         """
+        if not self.__width or not self.__height:
+            return 0
         return (self.__width + self.__height) * 2
