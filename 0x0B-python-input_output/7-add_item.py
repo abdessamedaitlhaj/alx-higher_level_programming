@@ -9,13 +9,9 @@ save_json = __import__("5-save_to_json_file")
 load_json = __import__("6-load_from_json_file")
 
 
-my_list = []
-
-#load what's already in the json file
-my_list += load_json.load_from_json_file("add_item.json")
+my_list = load_json.load_from_json_file("add_item.json")
 
 for arg in sys.argv[1:]:
     my_list.append(arg)
 
-#save the list to json file
 save_json.save_to_json_file(my_list, "add_item.json")
