@@ -32,10 +32,10 @@ class Student:
             Return:
                 the dictionary description of the student
         """
-        if not attrs:
+        if attrs == None:
             return self.__dict__
         my_dict = {}
         for a in attrs:
-            if a in self.__dict__.keys():
+            if a in self.__dict__:
                 my_dict[a] = self.__dict__[a]
         return my_dict
