@@ -35,7 +35,7 @@ class Student:
         if not attrs:
             return self.__dict__
         my_dict = {}
-        for a in attrsi:
+        for a in attrs:
             if a in my_dict.keys():
                 my_dict[a] = self.__dict__[a]
         return my_dict
