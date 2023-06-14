@@ -6,12 +6,16 @@ import the class:
 
 check for empty list:
 	>>> m = MyList()
+	>>> m
+	[]
 	>>> m.print_sorted()
 	[]
 
 check for single element:
 	>>> m = MyList()
 	>>> m.append(1)
+	>>> m
+	[1]
         >>> m.print_sorted()
 	[1]
 
@@ -20,15 +24,21 @@ check for sorted list:
         >>> m.append(1)
 	>>> m.append(2)
 	>>> m.append(3)
+	>>> m
+	[1, 2, 3]
         >>> m.print_sorted()
         [1, 2, 3]
 
 check for float numbers:
         >>> m = MyList([1.5, 2.3, 3.09])
+	>>> m
+	[1.5, 2.3, 3.09]
         >>> m.print_sorted()
         [1.5, 2.3, 3.09]
 
 check for strings:
 	>>> m = MyList(["Best", "School", "ALX"])
+	>>> m
+	["Best", "School", "ALX"]
         >>> m.print_sorted()
         ['ALX', 'Best', 'School']
