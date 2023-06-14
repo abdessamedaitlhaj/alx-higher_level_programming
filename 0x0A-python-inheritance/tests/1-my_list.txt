@@ -54,10 +54,3 @@ check for strings:
 	['ALX', 'holberton', 'best', 'school']
         >>> m.print_sorted()
         ['ALX', 'best', 'holberton', 'school']
-
-check for string argument:
-	>>> m = MyList("python")
-	>>> m
-	['p', 'y', 't', 'h', 'o', 'n']
-	>>> m.print_sorted()
-	['h', 'n', 'o', 'p', 't', 'y']
