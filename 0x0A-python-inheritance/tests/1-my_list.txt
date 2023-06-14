@@ -29,6 +29,16 @@ check for sorted list:
         >>> m.print_sorted()
         [1, 2, 3]
 
+check for negative numbers:
+        >>> m = MyList()
+	>>> m.append(-10)
+        >>> m.append(-2)
+        >>> m.append(-13)
+        >>> m
+        [-10, -2, -13]
+        >>> m.print_sorted()
+        [-13, -10, -2]
+
 check for float numbers:
         >>> m = MyList([1.5, 2.3, 3.09])
 	>>> m
