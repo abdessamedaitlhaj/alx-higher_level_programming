@@ -39,6 +39,6 @@ check for float numbers:
 check for strings:
 	>>> m = MyList(["Best", "School", "ALX"])
 	>>> m
-	["Best", "School", "ALX"]
+	['Best', 'School', 'ALX']
         >>> m.print_sorted()
         ['ALX', 'Best', 'School']
