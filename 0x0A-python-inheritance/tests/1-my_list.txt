@@ -22,3 +22,19 @@ check for sorted list:
 	>>> m.append(3)
         >>> m.print_sorted()
         [1, 2, 3]
+
+check for float numbers:
+        >>> m = MyList()
+        >>> m.append(1.5)
+        >>> m.append(2.3)
+        >>> m.append(3.09)
+        >>> m.print_sorted()
+        [1.5, 2.3, 3.09]
+
+check for strings:
+	>>> m = MyList()
+        >>> m.append("Best")
+        >>> m.append("School")
+        >>> m.append("ALX")
+        >>> m.print_sorted()
+        ['ALX', 'Best', 'School']
