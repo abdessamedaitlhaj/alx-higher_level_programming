@@ -1,0 +1,24 @@
+Test for MyList module
+=======================
+
+import the class:
+	>>> MyList =  __import__("1-my_list").MyList
+
+check for empty list:
+	>>> m = MyList()
+	>>> m.print_sorted()
+	[]
+
+check for single element:
+	>>> m = MyList()
+	>>> m.append(1)
+        >>> m.print_sorted()
+	[1]
+
+check for sorted list:
+	>>> m = MyList()
+        >>> m.append(1)
+	>>> m.append(2)
+	>>> m.append(3)
+        >>> m.print_sorted()
+        [1, 2, 3]
