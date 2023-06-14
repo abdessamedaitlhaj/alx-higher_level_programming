@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module that defines a Square class"""
-Rectangle = __import__("9-rectangle.py").Rectangle
+Rectangle = __import__("9-rectangle").Rectangle
 
 
 class Square(Rectangle):
@@ -21,3 +21,11 @@ class Square(Rectangle):
                 the square area
         """
         return self.__size * self__size
+
+    def __str__(self):
+        """Overide str method
+
+        Return:
+            string
+        """
+        return f"[Rectangle] {self.__size}/{self.__size}"
