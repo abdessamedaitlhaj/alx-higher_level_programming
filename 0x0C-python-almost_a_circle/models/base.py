@@ -77,7 +77,7 @@ class Base:
                     the new instance
         """
         if cls.__name__ == "Rectangle":
-            dummy = cls(1,1)
+            dummy = cls(1, 1)
         if cls.__name__ == "Square":
             dummy = cls(1)
         dummy.update(**dictionary)
@@ -99,4 +99,3 @@ class Base:
             for dic in decoded_json_string:
                 my_list.append(cls.create(dic))
             return my_list
-
