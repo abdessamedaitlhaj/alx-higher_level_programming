@@ -48,7 +48,7 @@ class Base:
             content = cls.to_json_string(
                     [obj.to_dictionary() for obj in list_objs]
                     )
-            with open(cls.__name__ + ".json", "w", encoding="utf-8") as f:
+            with open(cls.__name__ + ".json", "w") as f:
                 f.write(content)
 
     @staticmethod
