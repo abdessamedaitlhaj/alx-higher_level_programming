@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module that writes a string to a text file (UTF8) and 
+Module that writes a string to a text file (UTF8) and
 returns the number of characters written
 """
 
