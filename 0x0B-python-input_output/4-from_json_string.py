@@ -3,15 +3,17 @@
 Module that defines a function that returns an object
 (Python data structure) represented by a JSON string
 """
+import json
 
 
 def from_json_string(my_str):
-    """Descode json string
+    """ Function returns an object as JSON
 
-        Args:
-            my_str(str): desired string to be decoded
+    Args:
+        my_str: JSON representation
 
-        Return:
-            the decoded string
+    Raises:
+        Exception: string can't be decoded
+
     """
-    return json.dumps(my_str)
+    return json.loads(my_str)
