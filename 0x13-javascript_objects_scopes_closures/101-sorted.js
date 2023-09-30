@@ -1,9 +1,12 @@
 #!/usr/bin/node
-const dict = require('./101-data').dict;
-const map = {};
-for (const [key, value] of Object.entries(dict)) {
-  if (map[value]) map[value].push(key);
-  else map[value] = [key];
-}
 
-console.log(map);
+const initialDict = require('./101-data').dict;
+const newDict = {};
+
+for (const [userId, occurrences] of Object.entries(initialDict)) {
+  if (!(occurrences in newDict)) {
+    newDict[occurrences] = [];
+  }
+  newDict[occurrences].push(userId);
+}
+console.log(newDict);
