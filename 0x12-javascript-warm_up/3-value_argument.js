@@ -2,6 +2,8 @@
 /* Script that prints the first argument passed to it */
 
 const firstArg = process.argv[2];
-if (firstArg) {
+if (firstArg === undefined) {
+  console.log('No argumen');
+} else {
   console.log(firstArg);
 }
