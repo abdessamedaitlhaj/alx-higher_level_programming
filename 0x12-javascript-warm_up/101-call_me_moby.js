@@ -5,4 +5,4 @@ module.exports = function (x, callMeMoby) {
   for (let i = 0; i < x; i++) {
     callMeMoby();
   }
-});
+};

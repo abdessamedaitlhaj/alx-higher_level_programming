@@ -4,4 +4,4 @@
 module.exports = function (number, addMeBoy) {
   number++;
   addMeBoy(number);
-});
+};
