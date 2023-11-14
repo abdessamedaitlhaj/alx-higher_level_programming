@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /* Function that increments and calls a function */
 
-module.exports = function (number, addMeBoy) {
+exports.addMeMayBe = function (number, theFunction) {
   number++;
-  addMeBoy(number);
+  theFunction(number);
 };
