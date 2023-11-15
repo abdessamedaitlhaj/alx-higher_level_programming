@@ -21,8 +21,8 @@ class Square extends OldSquare {
         X = '';
       }
     } else {
-        this.print();
-      }
+      this.print();
+    }
   }
 }
 module.exports = Square;
