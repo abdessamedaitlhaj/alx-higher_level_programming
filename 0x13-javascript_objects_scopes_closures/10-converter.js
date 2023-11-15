@@ -6,4 +6,4 @@ exports.converter = function (base) {
     console.log(base % 10);
     base /= 10;
   }
-}
+};

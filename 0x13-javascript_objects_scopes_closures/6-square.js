@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
 `charPrint` that prints the rectangle using
-the character c, if it is undefined the char 'X' will be used 
+the character c, if it is undefined the char 'X' will be used
 */
 
 const OldSquare = require('./5-square.js');
@@ -9,6 +9,7 @@ class Square extends OldSquare {
   constructor (size) {
     super(size, size);
   }
+
   charPrint (c) {
     if (c !== undefined) {
       let X = '';
@@ -18,10 +19,10 @@ class Square extends OldSquare {
         }
         console.log(X);
         X = '';
-      } 
+      }
     } else {
         this.print();
-    }
+      }
   }
 }
 module.exports = Square;

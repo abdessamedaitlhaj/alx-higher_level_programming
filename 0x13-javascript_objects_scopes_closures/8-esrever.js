@@ -11,4 +11,4 @@ exports.esrever = function (list) {
     i++;
   }
   return (list);
-}
+};
