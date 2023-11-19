@@ -7,12 +7,12 @@ import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    user = sys.argv[1]
-    passwd = sys.argv[2]
-    db = sys.argv[3]
-    host = "localhost"
-
-    conn = MySQLdb.connect(host, user, passwd, db)
+    username = sys.argv[1]
+    password = sys.argv[2]
+    dbname = sys.argv[3]
+    
+    con = MySQLdb.connect(host="127.0.0.1", user=username,
+                         passwd=password, db=dbname, port=3306)
 
     cur = conn.cursor()
     query = "SELECT * FROM states"
