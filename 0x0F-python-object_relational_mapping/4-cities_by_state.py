@@ -19,8 +19,8 @@ if __name__ == "__main__":
         SELECT cities.id, cities.name, states.name FROM cities
         INNER JOIN states ON states.id = cities.state_id"""
     cur.execute(query)
-    states = cur.fetchall()
-    for state in states:
-        print(state)
+    rws = cur.fetchall()
+    for rw in rws:
+        print(rw)
     cur.close()
     conn.close()

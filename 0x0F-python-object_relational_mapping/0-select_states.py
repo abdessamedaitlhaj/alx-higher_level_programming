@@ -17,8 +17,8 @@ if __name__ == "__main__":
     cur = conn.cursor()
     query = "SELECT * FROM states ORDER BY id"
     cur.execute(query)
-    states = cur.fetchall()
-    for state in states:
-        print(state)
+    rws = cur.fetchall()
+    for rw in rws:
+        print(rw)
     cur.close()
     conn.close()
