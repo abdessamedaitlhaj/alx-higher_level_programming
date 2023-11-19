@@ -17,8 +17,7 @@ if __name__ == "__main__":
     cur = conn.cursor()
     query = """
         SELECT cities.id, cities.name, states.name FROM cities
-        INNER JOIN states ON cities.id = states.id
-        """
+        INNER JOIN states ON cities.id = states.id"""
     cur.execute(query)
     states = cur.fetchall()
     for state in states:
