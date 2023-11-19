@@ -15,7 +15,10 @@ if __name__ == "__main__":
                            passwd=p, db=db, port=3306)
 
     cur = conn.cursor()
-    query = "SELECT * FROM cities"
+    query = """
+        SELECT cities.id, cities.name, states.name FROM cities
+        INNER JOIN states ON cities.id = states.id
+        """
     cur.execute(query)
     states = cur.fetchall()
     for state in states:
