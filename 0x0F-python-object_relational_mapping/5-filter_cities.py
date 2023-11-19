@@ -17,11 +17,12 @@ if __name__ == "__main__":
     cur = conn.cursor()
     query = """
         SELECT cities.name FROM cities
-        INNER JOIN states ON states.name = %s"""
+        INNER JOIN states ON states.id = cities.state_id
+        WHERE states.name = %s"""
     cur.execute(query, (state_name,))
     rws = cur.fetchall()
     for i, rw in enumerate(rws):
-        if i < len(rws):
+        if i > 0 and i < len(rws):
             print(", ", end="")
         print(rw[0], end="")
     print()
