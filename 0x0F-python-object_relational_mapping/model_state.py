@@ -10,10 +10,8 @@ Base = declarative_base()
 
 
 class State(Base):
+    """Definition of class attributes"""
+
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
-
-
-if __name__ == 'main':
-    main()
