@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     session = Session()
     states = session.query(State).all()
-    for index, state in enumerate(states):
-        print("{}: {}".format(index, state.name))
+    for state in enumerate(states):
+        print("{}: {}".format(state.id, state.name))
     session.close()
     engine.dispose()
