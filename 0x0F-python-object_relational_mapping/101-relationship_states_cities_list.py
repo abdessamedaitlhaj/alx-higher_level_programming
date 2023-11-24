@@ -21,6 +21,6 @@ if __name__ == "__main__":
     for st in states:
         print("{}: {}".format(st.id, st.name))
         for ct in st.cities:
-            print("   {}: {}".format(ct.id, ct.name))
+            print("    {}: {}".format(ct.id, ct.name))
     session.close()
     engine.dispose()
