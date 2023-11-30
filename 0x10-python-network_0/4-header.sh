@@ -1,4 +1,4 @@
 #!/bin/bash
 # send a request with a header variable
 
-curl -sH "$1" "X-School-User-Id: 98"
+curl -s "$1" -H "X-School-User-Id: 98"
